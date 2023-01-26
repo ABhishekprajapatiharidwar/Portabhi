@@ -3,9 +3,24 @@ body {
     box-sizing: border-box;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
-  
-  
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
 
+}
+
+
+main{
+    display: flex;
+    flex-wrap: wrap;
+}
+header{
+    height: 1in;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
 }
 
 nav {
@@ -13,14 +28,13 @@ nav {
     border: 2px solid white;
     display: flex;
     flex-wrap: wrap;
-    width: 96%;
-    flex-wrap: wrap;
 
+    width: 95%;
     border-radius: 55px;
     background-color: rgb(0, 0, 0);
     position: fixed;
     z-index: 15;
-    margin: 0 12px;
+    
 
 }
 
@@ -43,7 +57,7 @@ nav {
 
 #name {
 
-    height: 25rem;
+    height: 0.8in;
     position: relative;
 
 }
@@ -61,6 +75,7 @@ nav {
 }
 
 #ndet {
+    background-color: white;
  
 }
 
@@ -136,48 +151,67 @@ nav {
 
 /*-------main ---------*/
 #sec {
-    height: 50rem;
+    height: max-content;
     width: 100%;
+    justify-content: center;
+    align-items: center;
 
-    margin-top: 0px;
-    display: flex;
-    flex-direction: row;
+    
+   display: flex;
+   flex-wrap: wrap;
+   
+    
+    
 }
 
+
+
 #profile_image {
-    height: 45rem;
-    width: 35%;
+    height:7.5in;
+   margin-top: 100px;
+    width: 40%;
 
     margin-top: 50px;
+   
+    display: flex;
+    align-items: center;
+    justify-content: center;
 
 }
 
 #about_my {
-    height: 6.8in;
-    width: 60%;
-    box-sizing: border-box;
-
+    height: max-content;
+    margin-top: 35%;
+    width: 50%;
+     font-family: 'Cinzel', serif; 
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-left: 60px;
     margin-top: 100px;
+
 }
 
 .ab {
-    margin: auto;
+   
 }
 
 #photo {
-    height: 6.8in;
-    width: 491px;
+    height: auto;
+    width: 410px;
     -webkit-filter: grayscale(100%);
     /* Safari 6.0 - 9.0 */
     filter: grayscale(100%);
     margin-top: 78px;
+   
 }
 
 #photo:hover {
-    height: 7in;
-    width: 500px;
+    height: auto;
+    width: 425px;
     transition: all;
-    transition-duration: 1s;
+    transition-duration: 2s;
 
 }
 
@@ -198,7 +232,7 @@ nav {
 }
 
 #int_image {
-    padding-left: 150px;
+    
     height: 120px;
     -webkit-filter: grayscale(1) invert(1);
     filter: grayscale(1) invert(1);
@@ -210,8 +244,8 @@ nav {
     color: rgb(168, 165, 165);
     margin-top: 0%;
     margin-left: 0%;
-    padding-left: 110px;
-    text-align: justify;
+   
+    
 
 }
 
@@ -219,20 +253,32 @@ nav {
 
     color: white;
     font-family: 'Cinzel', serif;
+    text-align: center;
+    padding: auto;
+    font-size: 1.5rem;
 
 }
 
 
+@media only screen and(max-width:856){
+    #int_txt{
+        font-size: 0.7rem;
+    }
+    
+}
+
 /*  --------- Social Media Ac------*/
 
 #social_media {
-    height: 2in;
+    height:max-content;
     width: 100%;
     display: flex;
     border-radius: 5px;
     background-color: rgb(17, 17, 17);
     flex-direction: row;
-    flex-wrap: wrap;
+   
+    flex-wrap:wrap;
+    
 
 }
 
@@ -244,9 +290,11 @@ nav {
     display: flex;  */
     border-radius: 100px; 
      margin: auto;
-     padding: auto;
+     
     box-sizing: border-box;
 }
+
+   
 
 
 #social_media a{
@@ -344,21 +392,25 @@ nav {
 /*-----------------About-------------*/
 
 #about_main {
-    height: 38rem;
+    height: max-content;
     width: 100%;
+   
 
     display: flex;
+    flex-wrap: wrap-reverse;
+    align-items: center;
+    justify-content: center;
 }
 
 #about_id1 {
-    height: 38rem;
-    width: 75%;
+    height: max-content;
+    width: auto;
 
     color: yellow;
     box-sizing: border-box;
     display: flex;
     padding: 2rem;
-    font-size: 1rem;
+    font-size: 1.4rem;
     font-weight: 500;
     background-image: url(bg2.jpg);
     background-repeat: no-repeat;
@@ -372,14 +424,21 @@ nav {
     color: white;
     display: flex;
     flex-direction: column;
-    margin: auto;
+    margin: 30px 30px 30px 30px;
     box-shadow: 3px 3px 5px 3px white;
-    height: 5in;
+    height: 30rem;
+    justify-content: center;
+   padding-top: 50px;
+    align-items: center;
     border-radius: 25px;
-    margin-right: 8px;
+    width: 25rem;
+}
 
 
 
+
+#para_about{
+    font-size: 1.8rem;
 }
 
 #ab_img {
@@ -392,7 +451,7 @@ nav {
 
 #about_h {
     text-align: center;
-    font-size: 6rem;
+    font-size: 7rem;
     margin-top: 0;
     position: relative;
     bottom: 120px;
@@ -404,8 +463,12 @@ nav {
 
 
 #skills {
-    height: 40rem;
+    height: max-content;
     width: 100%;
+   
+    
+    
+    
 
     
 }
@@ -417,7 +480,7 @@ nav {
 }
 
 .skills_main {
-    height: 31rem;
+    height: max-content;
     width: 70%;
     
     margin: auto;
@@ -502,8 +565,9 @@ nav {
 /*-----Projects--------*/
 
 #projects{
-    height: 8.5in;
+    height: max-content;
     width: 100%;
+   
   
     background-image: url(bl4.webp);
     background-size: cover;
@@ -518,12 +582,14 @@ nav {
 
 #pro_main{
     display: flex;
-    height: 7in ;
-    width: 80%;
+    height: max-content ;
+    width: 90%;
     
-    margin: auto;
-    padding-top: 0%;
+   margin: auto;
     flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    
     
 
 }
@@ -533,11 +599,13 @@ nav {
   height: 20rem;
   box-shadow: 1px 1px 8px 1px yellow;
   border-radius: 12px;
-  margin: auto;
+ margin: 12px 12px 12px 12px;
   font-family: 'Poppins', sans-serif;
   color: white;
-  padding-left: 5px;
-  padding-right: 5px;   
+  
+   
+  
+   
 }
 
 .proj_div h2{
@@ -586,15 +654,16 @@ transition-duration: 1s;
 /*------------Footer --------------*/
 
 #foot{
-    height: 40rem;
+    height: max-content;
     width: 100%;
     background-color: rgb(26, 25, 25);
     display: flex;
+    flex-wrap: wrap;
     margin: auto;
 }
 
 #cont{
-  height: 37rem;
+  height: max-content;
   width: 50%;
 
   margin: auto;
@@ -629,16 +698,8 @@ input{
     
 }
 
-textarea{
-    background-color: black;
-    color: white;
-    border: 2px solid green;
-    box-shadow: 1px 1px 5px 2px green;
-    border-radius: 20px;
-    padding-left: 10px;
-    padding-top: 5px;
-    width: 638px;
-  
+#tt{
+    height: 10rem;
     
 }
 
@@ -699,6 +760,10 @@ button:active{
 }
 
 
-
+@media only screen and (max-width: 1500px) {
+    #para_about{
+        font-size: 1rem;
+    }
+}
 
 
