@@ -53,7 +53,6 @@ nav {
   position: relative;
 }
 
-
 #n {
   color: white;
 }
@@ -210,7 +209,6 @@ nav {
   width: 65px;
 }
 
-
 #resume a {
   text-decoration: none;
 }
@@ -250,7 +248,6 @@ nav {
   margin-left: 60px;
   margin-top: 100px;
 }
-
 
 #photo {
   height: auto;
@@ -461,7 +458,7 @@ nav {
 }
 
 #para_about {
-  font-size: 1.8rem;
+  font-size: 1.5rem;
 }
 
 #ab_img {
@@ -504,9 +501,8 @@ nav {
 }
 
 .scon {
-  height: 9rem;
-  width: 18rem;
-  flex-wrap: wrap-reverse;
+  height: 7rem;
+  width: 10rem;
   margin: auto;
   background-size: contain;
   background-position: center;
@@ -551,8 +547,28 @@ nav {
 }
 
 #sk9 {
-  background-image: url(./src/js1.webp);
+  background-image: url(https://git-scm.com/images/logos/downloads/Git-Icon-1788C.png);
   background-size: 80px;
+}
+
+#sk10 {
+  background-image: url(https://assets.stickpng.com/images/5847f40ecef1014c0b5e488a.png);
+  background-size: 70px;
+}
+
+#sk11 {
+  background-image: url(https://upload.wikimedia.org/wikipedia/commons/thumb/b/b2/Bootstrap_logo.svg/1200px-Bootstrap_logo.svg.png);
+  background-size: 100px;
+}
+
+#sk12 {
+  background-image: url(https://freelogopng.com/images/all_img/1656733637logo-canva-png.png);
+  background-size: 90px;
+}
+
+#sk13 {
+  background-image: url(https://ajeetchaulagain.com/static/7cb4af597964b0911fe71cb2f8148d64/87351/express-js.png);
+  background-size: 90px;
 }
 
 .scon:hover {
@@ -573,9 +589,73 @@ nav {
 #projects {
   height: max-content;
   width: 100%;
-
+  margin-top: 4rem;
+  margin-bottom: 4rem;
   background-image: url(bl4.webp);
   background-size: cover;
+}
+
+#saprate-hr {
+  background-color: rgb(73, 73, 73);
+  width: 70%;
+}
+
+/*--------------*/
+
+.image-container {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  background: url("your-image-url.jpg") center/cover;
+  overflow: hidden;
+  border-radius: 12px;
+}
+
+.text-slide {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.942);
+  color: white;
+  text-align: center;
+  padding: 10px;
+  transform: translateY(100%);
+  transition: transform 0.3s ease;
+}
+
+.text-slide h1 {
+  font-size: 1.2rem;
+  color: yellow;
+}
+
+.text-slide p {
+  margin-right: 14px;
+}
+
+.image-container:hover .text-slide {
+  transform: translateY(0);
+}
+
+/*----------------*/
+
+#pr1 {
+  background-image: url(./src/portfolio.png);
+}
+
+#pr2 {
+  background-image: url("./src/votely.png");
+}
+
+#pr3 {
+  background-image: url("./src/math.png");
+}
+
+#pr4 {
+  background-image: url("./src/futurefuse.png");
+}
+#pr5 {
+  background-image: url("./src/university.png");
 }
 
 #pro_h {
@@ -596,13 +676,16 @@ nav {
 }
 
 .proj_div {
-  width: 20rem;
-  height: 20rem;
+  width: 25rem;
+  height: 15rem;
   box-shadow: 1px 1px 8px 1px yellow;
   border-radius: 12px;
   margin: 12px 12px 12px 12px;
   font-family: "Poppins", sans-serif;
   color: white;
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
 }
 
 .proj_div h2 {
@@ -614,7 +697,7 @@ nav {
   display: flex;
   height: 60px;
   width: 100%;
-  margin-top: 40px;
+  margin-top: 10px;
 }
 
 .demo {
